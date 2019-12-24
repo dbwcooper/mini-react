@@ -1,0 +1,20 @@
+{
+  "name": "mini-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "babel --config-file './babel.config1.js' src/index.js --out-dir lib ",
+    "compile1": "babel --config-file './babel.config1.js' src/render.js --out-dir lib ",
+    "compile2": "babel --babelrc-roots ['*', './otherBabelRoot'] src/index.js --out-dir lib "
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4"
+  },
+  "dependencies": {
+    "core-js": "3.5"
+  }
+}

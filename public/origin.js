@@ -298,7 +298,6 @@ function updateHostComponent(fiber) {
 
 
 function reconcileChildren(wipFiber, childElements) {
-  console.log('reconcileChildren wipFiber: ', wipFiber.type)
   // TODO create new fibers
   let index = 0;
   let oldFiber = wipFiber.alternate && wipFiber.alternate.child;

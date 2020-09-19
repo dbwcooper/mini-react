@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "compile": "babel --config-file './babel.config1.js' src/index.js --out-dir lib ",
+    "compile": "babel src/index.js --out-dir lib ",
     "compile1": "babel --config-file './babel.config1.js' src/render.js --out-dir lib ",
     "compile2": "babel --babelrc-roots ['*', './otherBabelRoot'] src/index.js --out-dir lib "
   },
@@ -12,7 +12,8 @@
     "@babel/cli": "^7.7.5",
     "@babel/core": "^7.7.5",
     "@babel/preset-env": "^7.7.6",
-    "@babel/preset-react": "^7.7.4"
+    "@babel/preset-react": "^7.7.4",
+    "eslint": "^6.8.0"
   },
   "dependencies": {
     "core-js": "3.5"
